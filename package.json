@@ -5,6 +5,21 @@
   "main": "index.js",
   "author": "Ian Walter <public@iankwalter.com> (https://iankwalter.com)",
   "license": "SEE LICENSE IN LICENSE",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ianwalter/compare.git"
+  },
+  "keywords": [
+    "comparison",
+    "diff",
+    "match",
+    "matching",
+    "percentage"
+  ],
+  "bugs": {
+    "url": "https://github.com/ianwalter/compare/issues"
+  },
+  "homepage": "https://github.com/ianwalter/compare#readme",
   "scripts": {
     "lint": "eslint index.js test.js",
     "test": "ava"
