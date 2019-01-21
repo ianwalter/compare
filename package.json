@@ -1,18 +1,18 @@
 {
   "name": "@ianwalter/compare",
   "version": "0.0.0",
-  "description": "A utility to calculate the match percentage and diff between two objects/arrays",
+  "description": "A utility to calculate the match percentage and diff between two JavaScript objects",
   "main": "index.js",
   "author": "Ian Walter <public@iankwalter.com> (https://iankwalter.com)",
   "license": "SEE LICENSE IN LICENSE",
   "scripts": {
-    "test": "jest"
+    "test": "ava"
   },
   "dependencies": {
     "deep-diff": "^1.0.2"
   },
   "devDependencies": {
-    "jest": "^23.6.0",
+    "ava": "^1.1.0",
     "np": "^3.1.0"
   }
 }
