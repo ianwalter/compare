@@ -34,23 +34,23 @@ test('compare returns 50% match for objects with different second prop', t => {
 })
 
 test(' compare returns 100% match for the same shallow array', t => {
-  const lhs = [1,2,3]
-  const rhs = [1,2,3]
+  const lhs = [1, 2, 3]
+  const rhs = [1, 2, 3]
   const result = compare(lhs, rhs)
   t.is(result.match, 100)
   t.is(result.diff, undefined)
 })
 
 test('compare returns 67% match for missing val in second array', t => {
-  const lhs = [1,2,3]
-  const rhs = [1,2]
+  const lhs = [1, 2, 3]
+  const rhs = [1, 2]
   const result = compare(lhs, rhs)
   t.is(result.match, 67)
 })
 
 test('compare returns 67% match for extra val in second array', t => {
-  const lhs = [1,2,3]
-  const rhs = [1,2,3,4]
+  const lhs = [1, 2, 3]
+  const rhs = [1, 2, 3, 4]
   const result = compare(lhs, rhs)
   t.is(result.match, 67)
 })

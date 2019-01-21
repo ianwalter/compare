@@ -13,7 +13,7 @@ function getNumberOfItems (src, acc = 0) {
   return acc
 }
 
-const toValue = (acc, change) => (acc += change.kind === 'A' ? 1 : .5)
+const toValue = (acc, change) => (acc += change.kind === 'A' ? 1 : 0.5)
 
 module.exports = function compare (lhs, rhs) {
   const numberOfItems = getNumberOfItems(lhs)
