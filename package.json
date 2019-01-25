@@ -1,6 +1,6 @@
 {
   "name": "@ianwalter/compare",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A utility to calculate the match percentage and diff between two JavaScript objects",
   "main": "index.js",
   "author": "Ian Walter <public@iankwalter.com> (https://iankwalter.com)",
