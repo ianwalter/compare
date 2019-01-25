@@ -110,3 +110,24 @@ test('compare returns 0% match when given empty Array rhs', t => {
   const result = compare(lhs, rhs)
   t.is(result.match, 0)
 })
+
+test('compare returns 50% match when adding 2 Object items to Array rhs', t => {
+  const lhs = [{ a: 1 }, { b: 2 }]
+  const rhs = [{ a: 1 }, { b: 2 }, { c: 3 }, { d: 4 }]
+  const result = compare(lhs, rhs)
+  t.is(result.match, 50)
+})
+
+test('compare returns 75% match when removing nested Object prop rhs', t => {
+  const lhs = [{ a: 1 }, { b: 2 }]
+  const rhs = [{ a: 1 }, {}]
+  const result = compare(lhs, rhs)
+  t.is(result.match, 75)
+})
+
+test('compare returns 67% match when nested prop changed on rhs', t => {
+  const lhs = { a: 1, b: { c: 3 } }
+  const rhs = { a: 1, b: { d: 4 } }
+  const result = compare(lhs, rhs)
+  t.is(result.match, 67)
+})
